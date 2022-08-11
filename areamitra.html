@@ -27,13 +27,32 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
-<style>
-  
-</style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+     
+   
+      @media (max-width: 992px) {
+      #map {
+  width: 80%;
+  height: 300px;
+}
+
+.skiptranslate goog-te-gadget{
+  width:50%;
+}
+      }
+      @media (min-width: 1024px) {
+      #map {
+  width: 60%;
+  height: 500px;
+}
+      }
+    </style>
   </head>
 
   <body>
@@ -70,20 +89,20 @@
               data-in="fadeInDown"
               data-out="fadeOutUp"
             >
-            <li class="nav-item">
-                <a class="nav-link" href="beranda.php">Beranda</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="beranda.html">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.php">Tentang Kami</a>
+                <a class="nav-link" href="about.html">Tentang Kami</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link" href="areamitra.php">Area Mitra</a>
+              <a class="nav-link" href="areamitra.html">Area Mitra</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="tanikoetv.php">Tanikoe-TV</a>
+                <a class="nav-link" href="tanikoetv.html">Tanikoe-TV</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contact-us.php">Kontak Kami</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact-us.html">Kontak Kami</a>
               </li>
             </ul>
           </div>
@@ -120,61 +139,25 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h2>Contact Us</h2>
+            <h2>Area Mitra</h2>
             <ul class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-              <li class="breadcrumb-item active">Kontak Kami</li>
+              <li class="breadcrumb-item active">Area Mitra</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </div> <br>
+    <center>
+    <div id='map'></div>
+</center> <br>
     <!-- End All Title Box -->
 
     <!-- Start Contact Us  -->
-    <div class="contact-box-main">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="contact-info-left">
-              <h2>Contact Details</h2>
-              <p>
-                TANIKOE <br />
-                Plaza MR21 - Graha Jasindo, Fl. 11,
-              </p>
-              <ul>
-                <li>
-                  <p>
-                    <i class="fas fa-map-marker-alt"></i>Jl. Menteng Raya,
-                    Jakarta
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <i class="fas fa-phone-square"></i>Phone : +6285156765648
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <i class="fas fa-envelope"></i>Email :
-                    contactofficial@tanikoe.com
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <i class="fas fa-clock"></i>Hours : Monday - Friday: 9:00 AM
-                    to 5:00 PM
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="google_translate_element"></div>
-    <!-- End Cart -->
+    
 
+    <!-- End Cart -->
+    <div id="google_translate_element"></div> <br>
     <footer>
       <div class="footer-main">
         <div class="container">
@@ -260,6 +243,30 @@
 
     <!-- ALL JS FILES -->
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+      var locations = [
+  ["LOCATION_1", 11.8166, 122.0942],
+  ["LOCATION_2", 11.9804, 121.9189],
+  ["LOCATION_3", 10.7202, 122.5621],
+  ["LOCATION_4", 11.3889, 122.6277],
+  ["LOCATION_5", 10.5929, 122.6325]
+];
+
+var map = L.map('map').setView([11.206051, 122.447886], 8);
+mapLink =
+  '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+L.tileLayer(
+  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; ' + mapLink + ' Contributors',
+    maxZoom: 18,
+  }).addTo(map);
+
+for (var i = 0; i < locations.length; i++) {
+  marker = new L.marker([locations[i][1], locations[i][2]])
+    .bindPopup(locations[i][0])
+    .addTo(map);
+}
+    </script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
@@ -276,7 +283,7 @@
     <script src="js/custom.js"></script>
     <script type="text/javascript">
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
 }
 </script>
 
