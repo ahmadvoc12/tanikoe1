@@ -16,7 +16,7 @@
     <meta name="author" content="" />
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/logotani.png" type="image/x-icon" />
+     <link rel="shortcut icon" href="images/logotani.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/logotani.png" />
 
     <!-- Bootstrap CSS -->
@@ -27,25 +27,7 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/util.css" />
-<style>
-  @media (max-width: 992px) {
-      
-      .m-t-250 {
- margin-top: 112%;
 
-  font-size:10px;
-  
-}}
-      @media (min-width: 1024px) {
-   .m-t-250 {
- margin-top: 45%;
-  font-size: 20px;
-  
-}
-      }
-</style>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -54,6 +36,7 @@
 
   <body>
   
+    <!-- Start Main Top -->
     <header class="main-header">
       <!-- Start Navigation -->
       <nav
@@ -95,10 +78,10 @@
               <li class="nav-item">
               <a class="nav-link" href="areamitra.html">Area Mitra</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item active">
                 <a class="nav-link" href="tanikoetv.html">Seputar Tanikoe</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="contact-us.html">Kontak Kami</a>
               </li>
             </ul>
@@ -113,6 +96,25 @@
 
         <!-- End Side Menu -->
       </nav>
+      <style>
+
+  
+         @media (max-width: 992px) {
+      
+      .m-t-250 {
+ margin-top: 112%;
+
+  font-size:10px;
+  
+}}
+      @media (min-width: 1024px) {
+   .m-t-250 {
+margin-top: 45%;
+  font-size: 20px;
+  
+}
+      }
+      </style>
       <!-- End Navigation -->
     </header>
     <!-- End Main Top -->
@@ -132,9 +134,9 @@
     <!-- End Top Search -->
 
     <!-- Start All Title Box -->
-    <div id="slides-shop" class="cover-slides">
+     <div id="slides-shop" class="cover-slides">
       <ul class="slides-container">
-        <li class="text-center">
+       <li class="text-center">
           <img src="images/banner1.webp" alt="" />
           <div class="container">
             <div class="row">
@@ -225,7 +227,6 @@
             </div>
           </div>
         </li>
-        
       </ul>
       <div class="slides-navigation">
         <a href="#" class="next"
@@ -238,104 +239,109 @@
     </div>
     <!-- End All Title Box -->
 
-    <!-- Start Contact Us  -->
-    <div class="contact1">
-      <div class="container-contact1">
-        <div class="contact1-pic js-tilt" data-tilt>
-          <img src="images/img-01.png" alt="IMG">
-        </div>
+    <!-- Start Gallery  -->
   
-        <form class="contact1-form validate-form">
-          <center><span class="contact1-form-title">
-            <h4>Anda punya bisnis yang membutuhkan produk produk pertanian, perternakan dan perikanan segar ? dan ingin kebutuhan akan produk produk segar anda kami supply ? segera hubungi kami melalui email ke <strong>hallotanikoe@tanikoe.com</strong>
-            </br>TANIKOE dengan senang hati akan menjawab dan memasok kebutuhan bisnis anda
-          </h4>
-          </span> </center>
-  
-          <div class="wrap-input1 validate-input" data-validate = "Nama dibutuhkan">
-            <input class="input1" type="text" name="name" placeholder="Nama">
-            <span class="shadow-input1"></span>
-          </div>
-  
-          <div class="wrap-input1 validate-input" data-validate = "email valid dibutuhkan: ex@abc.xyz">
-            <input class="input1" type="text" name="email" placeholder="Email">
-            <span class="shadow-input1"></span>
-          </div>
-          
-          <div class="wrap-input1 validate-input" data-validate = "Nomor Telepon/WhatsApp dibutuhkan">
-            <input class="input1" type="text" name="subject" placeholder="Nomor whatsapp / telepon">
-            <span class="shadow-input1"></span>
-          </div>
-  
-          <div class="wrap-input1 validate-input" data-validate = "isi pesan dibutuhkan">
-            <textarea class="input1" name="message" placeholder="Pesan"></textarea>
-            <span class="shadow-input1"></span>
-          </div>
-  
-          <div class="container-contact1-form-btn">
-            <button class="contact1-form-btn">
-              <span>
-                Kirim Email
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title-all text-center">
+              <br>
+              <h1>Seputar Tanikoe</h1>
+              <div class="row">
+                <div class="col-lg-12">
+                    <div class="special-menu text-center">
+                        <div class="button-group filter-button-group">
+                            
+                           <a href="tanikoetv.html"><button data-filter="*">Kabar Tanikoe</button></a>
+                            <a href="tanikoetv2.html"><button class="active"data-filter="*">Tanikoe-TV</button></a>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            </div>
+            <div class="row special-list">
+                <div id="tv"class="col-lg-4 col-md-6 special-grid tv ">
+                <center>  <EMBED SRC="images/tanikoetv.mp4" WIDTH="280" HEIGHT="300" AUTOPLAY="false">
+          <h1><strong>Vlog </strong></h1></center></EMBED>
+              </div>
+              <div id="tv"class="col-lg-4 col-md-6 special-grid tv ">
+                <center>  <EMBED SRC="images/kentangberastagivlog.mp4" WIDTH="280" HEIGHT="300" AUTOPLAY="false">
+          <h1><strong>Vlog Kentang Berastagi </strong></h1></center></EMBED>
+              </div>
+              <div id="tv"class="col-lg-4 col-md-6 special-grid tv ">
+                <center>  <EMBED SRC="images/video1.mp4" WIDTH="280" HEIGHT="300" AUTOPLAY="false">
+          <h1><strong>Vlog Pertanian </strong></h1></center></EMBED>
+              </div>
+              <div id="tv"class="col-lg-4 col-md-6 special-grid tv ">
+                <center>  <EMBED SRC="images/video2.mp4" WIDTH="280" HEIGHT="300" AUTOPLAY="false">
+          <h1><strong>Vlog Pertanian 2</strong></h1></center></EMBED>
+              </div>
+             
 
-    <footer>
-      <div class="footer-main">
-        <div class="container">
-          <hr />
-          <div class="row">
-            <div class="col-lg-4 col-md-12 col-sm-12">
-              <div class="footer-widget">
-                <h4>PT. Tanikoe Mahkota Agribisnis</h4>
-                <p>
-                  <i class="fas fa-map-marker-alt"></i>Jl. Menteng Raya, Jakarta - Indonesia
-                </p>
-              
+          </div>
+        </div>
+        
+
+        
+        </div>
+      </div>
+   
+
+ 
+      <div id="google_translate_element"></div>
+      <footer>
+        <div class="footer-main">
+          <div class="container">
+            <hr />
+            <div class="row">
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-widget">
+                  <h4>PT. Tanikoe Mahkota Agribisnis</h4>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>Jl. Menteng Raya, Jakarta - Indonesia
+                  </p>
+                
+                </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12" style="display:none;">
-              <div class="footer-link">
-                <h4>Accessing Market & Trading</h4>
-              
-                  </li>
-                </ul>
+              <div class="col-lg-4 col-md-12 col-sm-12" style="display:none;">
+                <div class="footer-link">
+                  <h4>Accessing Market & Trading</h4>
+                
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12" style="float:right;">
-              <div class="footer-link-contact">
-                <h4>Contact Us</h4>
-                <ul>
-                  <li>
-                    <p>
-                      <i class="fas fa-instagram"></i> 
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <i class="fas fa-phone-square"></i>Phone:
-                      <a href="tel:+1-888705770">+6285156765648</a>
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <i class="fas fa-envelope"></i>Email:
-                      <a href="mailto:contactinfo@gmail.com"
-                        >hallotanikoe@tanikoe.com</a
-                      >
-                    </p>
-                  </li>
-                </ul>
+              <div class="col-lg-4 col-md-12 col-sm-12" style="float:right;">
+                <div class="footer-link-contact">
+                  <h4>Contact Us</h4>
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fas fa-instagram"></i> 
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-phone-square"></i>Phone:
+                        <a href="tel:+1-888705770">+6285156765648</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-envelope"></i>Email:
+                        <a href="mailto:contactinfo@gmail.com"
+                          >hallotanikoe@tanikoe.com</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
     <!-- End Footer  -->
 
     <!-- Start copyright  -->
@@ -345,7 +351,7 @@
       </p>
     </div>
     <!-- End copyright  -->
-
+    
     <a href="#" id="back-to-top" title="Back to top" style="display: none"
       >&uarr;</a
     >
@@ -368,25 +374,16 @@
     <script src="js/custom.js"></script>
     <script type="text/javascript">
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
 }
-
-</script>
-<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
+function myFunction() {
+  var x = document.getElementsByClassName("tv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

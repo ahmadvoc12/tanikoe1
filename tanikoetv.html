@@ -97,6 +97,8 @@
         <!-- End Side Menu -->
       </nav>
       <style>
+ .tv{display: none;}
+  
          @media (max-width: 992px) {
       
       .m-t-250 {
@@ -180,6 +182,51 @@ margin-top: 45%;
             </div>
           </div>
         </li>
+          <li class="text-center">
+          <img src="images/banner4.webp" alt="" />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="m-t-250" style="color:#ff8500;text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;bottom:10px;">
+                  <strong
+                    >Gudangnya
+                     Produk Produk Segar dan Berkualitas
+                  </strong>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </li>
+          <li class="text-center">
+          <img src="images/banner5.webp" alt="" />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="m-t-250" style="color:#ff8500;text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;bottom:10px;">
+                  <strong
+                    >Gudangnya
+                     Produk Produk Segar dan Berkualitas
+                  </strong>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </li>
+          <li class="text-center">
+          <img src="images/banner6.webp" alt="" />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="m-t-250" style="color:#ff8500;text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;bottom:10px;">
+                  <strong
+                    >Gudangnya
+                     Produk Produk Segar dan Berkualitas
+                  </strong>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </li>
         
       </ul>
       <div class="slides-navigation">
@@ -206,8 +253,8 @@ margin-top: 45%;
                     <div class="special-menu text-center">
                         <div class="button-group filter-button-group">
                             
-                            <button class="active" data-filter=".kabar">Kabar Tanikoe</button>
-                            <button data-filter=".tv">Tanikoe-TV</button>
+                            <a href="tanikoetv.html"><button class="active">Kabar Tanikoe</button></a>
+                            <a href="tanikoetv2.html"><button >Tanikoe-TV</button></a>
                           
                         </div>
                     </div>
@@ -215,23 +262,8 @@ margin-top: 45%;
             </div> 
             </div>
             <div class="row special-list">
-                <div class="col-lg-4 col-md-6 special-grid tv ">
-                <center>  <EMBED SRC="images/tanikoetv.mp4" WIDTH="280" HEIGHT="300" AUTOPLAY="false">
-          <h1><strong>Vlog </strong></h1></center></EMBED>
-              </div>
-              <div class="col-lg-4 col-md-6 special-grid tv ">
-                <center>  <EMBED SRC="images/kentangberastagivlog.mp4" WIDTH="280" HEIGHT="300" AUTOPLAY="false">
-          <h1><strong>Vlog Kentang Berastagi </strong></h1></center></EMBED>
-              </div>
-              <div class="col-lg-4 col-md-6 special-grid tv ">
-                <center>  <EMBED SRC="images/video1.mp4" WIDTH="280" HEIGHT="300" AUTOPLAY="false">
-          <h1><strong>Vlog Pertanian </strong></h1></center></EMBED>
-              </div>
-              <div class="col-lg-4 col-md-6 special-grid tv ">
-                <center>  <EMBED SRC="images/video2.mp4" WIDTH="280" HEIGHT="300" AUTOPLAY="false">
-          <h1><strong>Vlog Pertanian 2</strong></h1></center></EMBED>
-              </div>
-              <div class="col-lg-3 col-md-6 special-grid kabar">
+            
+              <div id="tv"class="col-lg-3 col-md-6 special-grid kabar">
                 <div class="products-single fix">
                     <div class="box-img-hover">
                         <div class="type-lb">
@@ -376,6 +408,14 @@ margin-top: 45%;
     <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
+}
+function myFunction() {
+  var x = document.getElementsByClassName("tv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
 </script>
 
