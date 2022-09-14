@@ -16,7 +16,7 @@
     <meta name="author" content="" />
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/logotani.png" type="image/x-icon" />
+     <link rel="shortcut icon" href="images/logotani.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/logotani.png" />
 
     <!-- Bootstrap CSS -->
@@ -25,60 +25,19 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <!-- Custom CSS -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-     
-   
-      @media (max-width: 992px) {
-      #map {
-  width: 80%;
-  height: 300px;
-}
-table{
-  font-size: 12px;
-}
- th, td {
-  padding: 10px;
-}
-  
-      .m-t-250 {
-  margin-top: 112%;
-
-  font-size:10px;
-  
-}
-
-.skiptranslate goog-te-gadget{
-  width:50%;
-}
-      }
-      @media (min-width: 1024px) {
-      #map {
-  width: 60%;
-  height: 500px;
-}
-      }
-      th, td {
-  padding: 15px;
-}
- .m-t-250 {
-   margin-top: 45%;
-  font-size: 20px;
-  
-}
-    </style>
   </head>
 
   <body>
   
+    <!-- Start Main Top -->
     <header class="main-header">
       <!-- Start Navigation -->
       <nav
@@ -111,19 +70,19 @@ table{
               data-in="fadeInDown"
               data-out="fadeOutUp"
             >
-            <li class="nav-item ">
+            <li class="nav-item">
                 <a class="nav-link" href="produk-kami.html">Produk Kami</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Tentang Kami</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
               <a class="nav-link" href="areamitra.html">Area Mitra</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item active">
                 <a class="nav-link" href="tanikoetv.html">Seputar Tanikoe</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link" href="contact-us.html">Kontak Kami</a>
               </li>
             </ul>
@@ -138,6 +97,25 @@ table{
 
         <!-- End Side Menu -->
       </nav>
+      <style>
+
+  
+         @media (max-width: 992px) {
+      
+      .m-t-250 {
+ margin-top: 112%;
+
+  font-size:10px;
+  
+}}
+      @media (min-width: 1024px) {
+   .m-t-250 {
+margin-top: 45%;
+  font-size: 20px;
+  
+}
+      }
+      </style>
       <!-- End Navigation -->
     </header>
     <!-- End Main Top -->
@@ -157,9 +135,9 @@ table{
     <!-- End Top Search -->
 
     <!-- Start All Title Box -->
-    <div id="slides-shop" class="cover-slides">
+     <div id="slides-shop" class="cover-slides">
       <ul class="slides-container">
-        <li class="text-center">
+       <li class="text-center">
           <img src="images/banner1.webp" alt="" />
           <div class="container">
             <div class="row">
@@ -275,47 +253,41 @@ table{
         ></a>
       </div>
     </div>
-    </div> <br>
-    <center>
-    <div id='map'></div>
-</center> <br>
-<br>
-<div class="container">
-  <center><h2><strong>Area Mitra</strong></h2> <br>
-  <table>
-  <tr>
-    <th>1. Gayo Aceh</th>
-    <th>5. Lampung</th>
-    <th>9. Jawa Barat</th>
-    <th>13. Nusa Tenggara Timur</th>
-  </tr>
-  <tr>
-    <th>2. Berastagi, Sumatra Utara</th>
-    <th>6. Kalimantan Barat</th>
-    <th>10. Dieng, Jawa Tengah</th>
-    <th>14. Papua Barat</th>
-  </tr>
-  <tr>
-    <th>3. Kerinci, Jambi</th>
-    <th>7. DKI Jakarta</th>
-    <th>11. Jogyakarta</th>
-  </tr>
-  <tr>
-    <th>4. Riau</th>
-    <th>8. Banten</th>
-    <th>12. Bali</th>
-  </tr>
-</table>
-</center>
-</div>
     <!-- End All Title Box -->
 
-    <!-- Start Contact Us  -->
-    
+    <!-- Start Gallery  -->
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title-all text-center">
+              <br>
+              <h1>Seputar Tanikoe</h1>
+              <div class="row">
+                <div class="col-lg-12">
+                    <div class="special-menu text-center">
+                        <div class="button-group filter-button-group">
+                             <a href="wacanakoe.html"><button class="active">Wacanakoe </button></a>
+                           <a href="tanikoetv.html"><button>Kabar Tanikoe</button></a>
+                            <a href="tanikoetv2.html"><button data-filter="*">Tanikoe-TV</button></a>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            </div>
+           
+        </div>
+        
 
-    <!-- End Cart -->
-    <div id="google_translate_element"></div> <br>
-   <footer>
+        
+        </div>
+      </div>
+   
+
+ 
+      <div id="google_translate_element"></div>
+      <footer>
       <div class="footer-main">
         <div class="container">
           <hr />
@@ -343,7 +315,7 @@ table{
                 <ul>
                   <li>
                     <p>
-                        <i class="fab fa-instagram"></i> Instagram:
+                      <i class="fab fa-instagram"></i> Instagram:
                       <a href="https://instagram.com/tanikoe.fresh?igshid=YmMyMTA2M2Y="
                         >Tanikoe.fresh</a>
                     </p>
@@ -378,48 +350,13 @@ table{
       </p>
     </div>
     <!-- End copyright  -->
-
+    
     <a href="#" id="back-to-top" title="Back to top" style="display: none"
       >&uarr;</a
     >
 
     <!-- ALL JS FILES -->
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script>
-      var locations = [
-  ["DKI Jakarta", -6.200000, 106.816666],
-  ["Gayo, Aceh", 3.96, 97.06],
-  ["Riau", 	0.2933469, 101.7068294],
-  ["Kerinci, Jambi", -2.068454, 101.402583],
-  ["Dieng, Jawa Tengah", -7.2094, 109.9234],
-  ["Lampung", -4.5585849, 105.4068079],
-  ["Kalimantan Barat", 	-0.2787808, 111.4752851],
-  ["Berastagi, Sumatra Utara", 	3.185291, 98.504913],
-  ["Banten", 	-6.4058172, 106.0640179],
-  ["Jawa Barat", 	-7.090911, 107.668887],
-  ["DI Yogyakarta", 	-7.8753849, 	110.4262088],
-  ["Bali", 	-8.4095178, 	115.188916],
-  ["Nusa Tenggara Timur", 		-8.6573819, 		121.07937056],
-  ["Papua Barat", 		-1.3361154, 		133.1747162],
-  
-  
-];
-
-var map = L.map('map').setView([-6.200000, 106.816666], 4);
-mapLink =
-  '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-L.tileLayer(
-  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; ' + mapLink + ' Contributors',
-    maxZoom: 18,
-  }).addTo(map);
-
-for (var i = 0; i < locations.length; i++) {
-  marker = new L.marker([locations[i][1], locations[i][2]])
-    .bindPopup(locations[i][0])
-    .addTo(map);
-}
-    </script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
@@ -437,6 +374,14 @@ for (var i = 0; i < locations.length; i++) {
     <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
+}
+function myFunction() {
+  var x = document.getElementsByClassName("tv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
 </script>
 
